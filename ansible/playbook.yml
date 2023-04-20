@@ -1,0 +1,10 @@
+---
+- hosts: pxeserver
+  become: true
+  roles:
+    - centos_repo
+    - common
+    - web_server
+
+
+...
