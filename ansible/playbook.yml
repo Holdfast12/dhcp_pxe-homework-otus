@@ -2,7 +2,7 @@
 - hosts: pxeserver
   become: true
   roles:
-    - centos_repo
+    - local_repo
     - common
     - web_server
 

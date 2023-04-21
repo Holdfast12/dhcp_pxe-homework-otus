@@ -1,13 +1,11 @@
 - name: install ru locale
   ansible.builtin.dnf:
-    name: glibc-langpack-ru
+    name:
+      - glibc-langpack-ru
+      - vim
+      - wget
     state: present
 
 - name: set timezone to Moscow
   timezone:
     name: Europe/Moscow
-
-- name: Install Vim
-  ansible.builtin.dnf:
-    name: vim
-    state: present
