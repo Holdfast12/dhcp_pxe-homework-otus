@@ -1,4 +1,0 @@
-- name: install apache
-  ansible.builtin.dnf:
-    name: httpd
-    state: present

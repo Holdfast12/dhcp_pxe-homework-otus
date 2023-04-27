@@ -1,6 +1,0 @@
-[local]
-name=Local
-baseurl=http:///localhost/repo/
-enabled=1
-gpgcheck=0
-

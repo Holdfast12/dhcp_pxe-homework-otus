@@ -1,5 +1,0 @@
-- name: set up repo
-  ansible.builtin.command: find /etc/yum.repos.d/ -type f -name 'CentOS-Linux-*' -exec sed -i 's/^mirrorlist/#mirrorlist/g' {} +
-
-- name: set up repo
-  ansible.builtin.command: find /etc/yum.repos.d/ -type f -name 'CentOS-Linux-*' -exec sed -i 's|^#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' {} +
